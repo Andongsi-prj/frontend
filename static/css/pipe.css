@@ -1,0 +1,105 @@
+.center-body{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 2;  
+
+	
+}
+
+
+.form-container{
+	width:400px;
+	height: 400px;
+}
+
+.submit-btn{
+	width:200px;
+	padding:8px;
+	margin-top:30px;
+	border-radius: 6px;
+	background: rgb(96, 96, 248);
+	color: white;
+	font-weight:700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 10px;
+}
+
+
+.submit-btn:hover{
+	background: blue;
+}
+
+.center-body .results{
+	margin-top:50px;
+    font-size:18px;
+    font-weight:700;
+}
+
+
+
+.upload{
+	width:300px;
+    height:25px;
+	padding:6px;
+	outline: none;
+	border:1px solid gray;
+	border-radius:6px;
+	margin-top:20px;
+    font-size:14px;
+    cursor: pointer;
+  
+}
+
+
+.form-container img{
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.submit-btn img{
+	width: 30px;
+    height: 30px;
+    margin-right: 10px;
+	margin-top: 5px;
+}
+
+
+
+.img-container{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+
+.timer-bar{
+    background: #ff0000 !important;  /* 진행 바 색상 */    /*!important = 중요한 것을 의미함 */
+}
+
