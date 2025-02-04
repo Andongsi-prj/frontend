@@ -17,3 +17,7 @@ def pipe():
 @site_route.route("/news")
 def news():
     return render_template("news.html")
+
+@site_route.route("/login")
+def login_page():
+    return render_template("login.html")

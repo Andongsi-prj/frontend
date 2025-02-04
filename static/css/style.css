@@ -50,13 +50,7 @@ header .menu{
     margin-left: 20px;
     font-weight: 700;
     color: black;
-    cursor: pointer;
     font-size: 18px;
-}
-
-
-header .menu:hover{
-    color: var(--color-main);
 }
 
 
@@ -209,4 +203,41 @@ header .menu:hover{
 }
 
 
+
+.form-control{
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+
+.click-btn{
+    width: 100px;
+    cursor: pointer;
+    background-color: #09052b;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+
+
+.click-btn:hover{
+    background-color: blue;
+}
+
+
+
+.name{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    margin-right: 10px; 
+}
 

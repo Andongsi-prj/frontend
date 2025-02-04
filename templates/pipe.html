@@ -12,32 +12,54 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
 
 </head>
-<body style="background: skyblue">
+<body>
+
+	<header>
+
+		<div class="inner">
+
+			<div class="logo-container">
+				<img class="logo" src="{{ url_for('static', filename='image/ANU.jpg') }}">
+				<span>파이프 실시간 검사</span>
+			</div>
+
+
+			<div class="icons">
+				<i class="fa-solid fa-house" onclick="location.href='/'"></i>
+				<i class="fa-solid fa-database" onclick="location.href='/data'"></i>
+				<i class="fa-solid fa-newspaper" onclick="location.href='/news'"></i>
+			</div>
+
+		</div>
+
+	</header>
+
+
 
 	<div class="img-container">
 		<img 
 		class="pipe-img"
 		src="https://img.freepik.com/premium-vector/empty-airport-conveyor-belt-flat-vector-illustration_530733-1865.jpg?w=1380">
 		
-		<div class="center-body">
-			<div class="form-container" align="center">
-
-				<h1>파이프 실시간 검사</h1>
-
-				<form id="uploadForm" enctype="multipart/form-data">
-
-					<input class="upload" type="file" id="imageInput" name="image" accept="image/*" />
-					<button class="submit-btn" type="submit">
-                        <i class="fa-solid fa-upload"></i>
-						<span>업로드 & 예측하기</span>
-					</button>
-
-				</form>
-				<div id="result" style="margin-top: 20px;"></div>
-
+		<section>
+			<div class="conveyor-container">
+				<div class="belt">
+					<img src="{{ url_for('static', filename='image/pipe1.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe2.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/bad_pipe.jpg') }}" alt="불량품">
+					<img src="{{ url_for('static', filename='image/pipe3.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe4.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe5.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe6.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe7.jpg') }}" alt="정상품">
+					<img src="{{ url_for('static', filename='image/pipe8.jpg') }}" alt="정상품">
+				</div>
 			</div>
-		</div>
+		</section>
 	</div>
+
+
+
 
 </body>
 </html>

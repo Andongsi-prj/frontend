@@ -3,6 +3,7 @@ from routes import register_blueprints
 
 app = Flask(__name__)
 
+
 register_blueprints(app)
 
 

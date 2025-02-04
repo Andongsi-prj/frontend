@@ -1,79 +1,50 @@
-.center-body{
-	width:100%;
-	display: flex;
-	justify-content: center;
-	position: relative;
-	z-index: 2;  
-
-	
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.form-container{
-	width:400px;
-	height: 400px;
+header .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.submit-btn{
-	width:200px;
-	padding:8px;
-	margin-top:30px;
-	border-radius: 6px;
-	background: rgb(96, 96, 248);
-	color: white;
-	font-weight:700;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+header .logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
-
-.submit-btn:hover{
-	background: blue;
+header .logo{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
-.center-body .results{
-	margin-top:50px;
-    font-size:18px;
-    font-weight:700;
+header .logo-container span{
+    font-size: 30px;
+    font-weight: bold;
 }
 
-
-
-.upload{
-	width:300px;
-    height:25px;
-	padding:6px;
-	outline: none;
-	border:1px solid gray;
-	border-radius:6px;
-	margin-top:20px;
-    font-size:14px;
-    cursor: pointer;
-  
-}
-
-
-.form-container img{
-    height: 100px;
-    width: 300px;
-    object-fit: cover;
+header .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 48px;
+    cursor: pointer;  
 }
 
 
 
-
-
-
-.submit-btn img{
-	width: 30px;
-    height: 30px;
-    margin-right: 10px;
-	margin-top: 5px;
-}
-
-
+/* /////////////////////////////////// */
 
 .img-container{
     width: 100%;
@@ -82,9 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 
-.img-container img{
+.img-container > .pipe-img{
     max-width: 100%;
     max-height: 100%;
     width: auto;
@@ -99,7 +71,43 @@
 
 
 
-.timer-bar{
-    background: #ff0000 !important;  /* 진행 바 색상 */    /*!important = 중요한 것을 의미함 */
+
+/* 2.3 */
+
+.conveyor-container {
+    position: relative;
+    width: 800px;
+    height: 204px;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin: 50px auto;
+    z-index: 2;
 }
 
+.belt {
+    display: flex;
+    position: absolute;
+    width: 3000px;
+    height: 250px;
+    animation: moveBelt 20s linear infinite;
+}
+
+.belt img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 3;
+}
+
+@keyframes moveBelt {
+    from { transform: translateX(0); }
+    to { transform: translateX(-1000px); } /* 애니메이션 이동 거리 조정 */
+}
+
+
+
+.timer-bar{
+    background: #ff0000 !important;  
+} 
